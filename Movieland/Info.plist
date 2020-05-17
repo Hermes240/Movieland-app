@@ -60,5 +60,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Find nearby movie theatre&apos;s</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Find nearby movie theatre&apos;s</string>
 </dict>
 </plist>

@@ -15,6 +15,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        if(UserDefaults.standard.object(forKey: "sortByTitle") == nil)
+        {
+            UserDefaults.standard.set(false, forKey: "sortByTitle")
+        }
+        
+        if(UserDefaults.standard.object(forKey: "sortByRating") == nil)
+        {
+            UserDefaults.standard.set(false, forKey: "sortByRating")
+        }
+        if(UserDefaults.standard.object(forKey: "userRating") == nil)
+        {
+            let dict: Dictionary<String, Double> = ["Hermes":10.0]
+            UserDefaults.standard.set(dict, forKey: "userRating")
+        }
+        
+        if(UserDefaults.standard.object(forKey: "limit") == nil)
+        {
+            UserDefaults.standard.set(10, forKey: "limit")
+        }
+        
         return true
     }
 
